@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyDailyTraining</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<script src="app.js" defer></script>
+
+<h1>MyDailyTraining</h1>
+<div class="menu-bar">
+    <ul>
+        <li class="homePageLink"><a href="index.html">Home</a></li>
+        <li>
+            <a href="https://www.google.com/search?q=mma&rlz=1C1CHBF_deDE919DE919&oq=mma&gs_lcrp=EgZjaHJvbWUyEQgAEEUYORhDGMkDGIAEGIoFMggIARBFGCcYOzIGCAIQRRhAMgYIAxBFGDsyDQgEEAAYkgMYgAQYuAQyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQc3NzRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">MMA</a>
+        </li>
+        <li><a href="https://www.youtube.com/results?search_query=daniel+cormier+wrestling">Wrestling</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=charles+oliveira">JiuJitsu</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=petr+yan+technique">Striking</a></li>
+        <li class="loginLink" style="float:right"><a href="login.html">Log out</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="diary">
+        <input type="date">
+        <h4 id="trainingType">What did you train today?</h4>
+
+        <input class="sparringTypeInput" type="text" placeholder="e.g. Jiu Jitsu">
+        <br>
+        <br>
+        How hard was the training?
+        <br>
+        <button class="intensity"></button>
+        <button class="intensityUp">+</button>
+        <button class="intensityDown">-</button>
+        <br>
+        <br>
+        <button id="loginButton" type="submit">Save entry</button>
+
+    </div>
+</div>
+
+</body>
+</html>

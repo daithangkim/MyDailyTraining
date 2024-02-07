@@ -1,0 +1,15 @@
+//TODOS
+
+sign in:
+- if button sign in is clicked the other buttons are deleted and new sign in button is created
+- above 'email' and 'password' there will be additional input texts for name, age,adress and below password there will be a repeat password and if not same there will be an alert
+- new user is added to database
+- if sign in button is clicked now it leads to app.html and there will be a new heading h2 'Welcome !'
+
+Home page
+- slideshow example screenshots of the app
+- creator name
+
+Login
+- when login successful and app entered menu bar changes to log out instead of login before
+- if owner then there will be extra things to click on in the menu bar and operations such ass print out all names of the users
