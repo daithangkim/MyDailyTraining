@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDailyTraining</title>
+    <style>
+        /* Style the form container */
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the form fields */
+        .form-container input[type="text"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+        }
+
+        /* Style the submit button */
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Style the submit button on hover */
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <!-- Contact form -->
+    <form action="muelldaithang@gmail.com" method="post" enctype="text/plain">
+        <!-- Feedback input -->
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback here..." required></textarea>
+
+        <!-- Anonymous name input -->
+        <label for="anonymous-name">Your Name (optional):</label>
+        <input type="text" id="anonymous-name" name="anonymous-name" placeholder="Anonymous" maxlength="50">
+
+        <!-- Email input -->
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your Email" required>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

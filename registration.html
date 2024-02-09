@@ -11,10 +11,23 @@
         .menu-bar .loginLink a:hover {
             background-color: #867474;
         }
+
+        .login {
+            padding: 15px;
+            background: white;
+            width: 200px;
+        }
+
+        .signIn {
+            padding: 15px;
+            background: white;
+            width: 200px;
+        }
     </style>
 </head>
 <body>
-<script src="login.js" defer></script>
+<script src="userDataBase.js" type="module"></script>
+<script src="registration.js" type="module"></script>
 <h1>MyDailyTraining</h1>
 <div class="menu-bar">
     <ul>
@@ -25,11 +38,41 @@
         <li><a href="https://www.youtube.com/results?search_query=daniel+cormier+wrestling">Wrestling</a></li>
         <li><a href="https://www.youtube.com/results?search_query=charles+oliveira">JiuJitsu</a></li>
         <li><a href="https://www.youtube.com/results?search_query=petr+yan+technique">Striking</a></li>
-        <li class="loginLink" style="float:right"><a href="login.html">Login</a></li>
+        <li class="loginLink" style="float:right"><a href="registration.html">Login</a></li>
     </ul>
 </div>
 
 <div class="content">
+    <div class="signIn" style="display: none">
+        <label for="SignInName">Name:</label>
+        <input type="text" id="SignInName" name="name" required>
+        <br>
+
+        <label for="SignInAge">Age:</label>
+        <input type="number" id="SignInAge" name="age" required>
+        <br>
+
+        <label for="SignInAddress">Address:</label>
+        <input type="text" id="SignInAddress" name="address" required>
+        <br>
+
+        <label for="SignInEmail">Email:</label>
+        <input type="email" id="SignInEmail" name="email" required>
+        <br>
+
+        <label for="SignInPassword">Password:</label>
+        <input type="password" id="SignInPassword" name="password" required>
+        <br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br>
+        <br>
+        <button id="signInButton2" type="submit">Sign in</button>
+
+
+    </div>
+
     <div class="login">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>

@@ -1,26 +1,17 @@
-const intensity = document.querySelector('.diary .intensity')
-const intensityUp = document.querySelector('.diary .intensityUp')
-const intensityDown = document.querySelector('.diary .intensityDown')
-const textInput = document.querySelector('.diary .sparringTypeInput')
-var volume = 0
+const addNewEntryButton = document.getElementById('addNewEntryButton')
+const reviewOldEntriesButton = document.getElementById('reviewOldEntriesButton')
 
-function updateIntensityButton(n) {
-    intensity.innerHTML = n.toString()
-}
+const intensity = document.getElementById('.intensity')
+const intensityUp = document.getElementById('.intensityUp')
+const intensityDown = document.getElementById('.intensityDown')
+let volume = 0
+const textInput = document.getElementById('.sparringTypeInput')
 
-function login(user){
 
-}
+addNewEntryButton.onclick = () =>{
+    document.querySelector('.accountActivityOptions').style.display='none'
+    document.querySelector('.newEntry').style.display='block'
 
-intensity.onclick = () => {
-    console.log(volume)
-}
-
-intensityUp.onclick = () => {
-    if (volume < 10) updateIntensityButton(++volume)
-}
-intensityDown.onclick = () => {
-    if (volume > 0) updateIntensityButton(--volume)
 }
 
 //when question answered then input text is set as day's heading
@@ -31,7 +22,23 @@ textInput.onchange = function(e){
     textInput.remove()
 }
 
+//todo: creates the goals list and make check boxes
+
+
+intensity.onclick = () => {
+    console.log(volume)
+}
+
+intensityUp.onclick = () => {
+    if (volume < 10) updateIntensityButton(++volume)
+}
+
+intensityDown.onclick = () => {
+    if (volume > 0) updateIntensityButton(--volume)
+}
+function updateIntensityButton(n) {
+    intensity.innerHTML = n.toString()
+}
 
 updateIntensityButton(volume)
-
 

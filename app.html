@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <title>MyDailyTraining</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content .accountActivityOptions img{
+            width: 45%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .accountActivityOptions {
+            text-align: center;
+        }
+
+        .newEntry {
+            padding: 15px;
+            background: white;
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
+<script src="userDataBase.js" type="module"></script>
 <script src="app.js" defer></script>
 
 <h1>MyDailyTraining</h1>
@@ -18,28 +44,46 @@
         <li><a href="https://www.youtube.com/results?search_query=daniel+cormier+wrestling">Wrestling</a></li>
         <li><a href="https://www.youtube.com/results?search_query=charles+oliveira">JiuJitsu</a></li>
         <li><a href="https://www.youtube.com/results?search_query=petr+yan+technique">Striking</a></li>
-        <li class="loginLink" style="float:right"><a href="login.html">Log out</a></li>
+        <li class="loginLink" style="float:right"><a href="registration.html">Log out</a></li>
     </ul>
 </div>
 
+<div class=""></div>
 <div class="content">
-    <div class="diary">
+    <div class="accountActivityOptions">
+        <h3>Welcome! What would you like to do?</h3>
+        <button id="addNewEntryButton">Add New Entry</button>
+        <button id="reviewOldEntriesButton">Review Older Entries</button>
+        <img src="photos/fitnessBoxingGirl.jpg">
+    </div>
+    <div class="newEntry" style="display: none">
         <input type="date">
         <h4 id="trainingType">What did you train today?</h4>
 
-        <input class="sparringTypeInput" type="text" placeholder="e.g. Jiu Jitsu">
+        <input id="sparringTypeInput" type="text" placeholder="e.g. Jiu Jitsu">
         <br>
         <br>
+
+        What are your today's goals ? Click the checkbox when goal reached
+        <div id="goals">
+            <input id="goalsInput" type="text" placeholder="Enter your goals">
+        </div>
+        <br>
+        <br>
+
+
         How hard was the training?
         <br>
-        <button class="intensity"></button>
-        <button class="intensityUp">+</button>
-        <button class="intensityDown">-</button>
+        <button id="intensity"></button>
+        <button id="intensityUp">+</button>
+        <button id="intensityDown">-</button>
         <br>
         <br>
+
         <button id="loginButton" type="submit">Save entry</button>
 
     </div>
+    <div class="daySummary" style="display: none"></div>
 </div>
 
 </body>
